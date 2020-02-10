@@ -14,6 +14,15 @@ export class PizzarankComponent implements OnInit {
 
   constructor(private _dataService:PizzadataService) { }
 
+  generateId(vals : string[]) : number{
+    let res : number=0;
+    _.forEach(vals, function(po:string){
+      for(let i=0;i<po.length;i++)
+        res+=po.charCodeAt(i);
+    });
+    return res;
+  }
+
   ngOnInit() {
     let self = this;
 
@@ -25,16 +34,17 @@ export class PizzarankComponent implements OnInit {
             displayval : njn,
             rank:0,
             count : 0,
+            hash : self.generateId(po.toppings),
             toppings:po.toppings
           }
           coll.push(newRec);
           return coll;
       }, []);
 
-      //console.log("PizzaOrders",this.PizzaOrders);
+      console.log("PizzaOrders",this.PizzaOrders);
 
       this.PizzaListing = _.reduce(this.PizzaOrders, function(coll, po, idx) {
-        let selListing = _.find(coll, [ 'displayval', po.displayval]);
+        let selListing = _.find(coll, [ 'hash', po.hash]);
         if (selListing==null) {
           po.count=1;
           coll.push(po);

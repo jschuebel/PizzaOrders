@@ -4,7 +4,7 @@
         <th>Combinations</th>
     </tr>
     <tr *ngFor="let aw of Top20" >
-        <td>{{aw.displayval}}</td>
+        <td>-{{aw.displayval}}</td>
       </tr>
 </table>
 
@@ -16,7 +16,7 @@
         <th>Combinations</th>
     </tr>
     <tr *ngFor="let aw of PizzaListing; let i = index" >
-        <td>{{aw.rank}}</td>
+        <td>- {{aw.rank}}</td>
         <td>{{aw.count}}</td>
         <td>{{aw.displayval}}</td>
 
