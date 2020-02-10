@@ -3,27 +3,27 @@
 Produced with Angular 8 and Lodash
 
 ## Top 20 Combinations
--pepperoni
--mozzarella cheese
--four cheese
--bacon
--beef
--sausage
--italian sausage
--chicken
--pepperoni, four cheese
--ham
--mushrooms
--mozzarella cheese, pepperoni
--pepperoni, beef
--bacon, pepperoni
--black olives
--alredo sauce
--sausage, pepperoni
--cheddar cheese
+- pepperoni
+- mozzarella cheese
+- four cheese
+- bacon
+- beef
+- sausage
+- italian sausage
+- chicken
+- pepperoni, four cheese
+- ham
+- mushrooms
+- mozzarella cheese, pepperoni
+- pepperoni, beef
+- bacon, pepperoni
+- black olives
+- alredo sauce
+- sausage, pepperoni
+- cheddar cheese
 
 ## Order and Rank
-Rank	Count	Combinations
+## Rank	Count	Combinations
 - 16	101	alredo sauce
 - 436	1	alredo sauce, beef
 - 87	7	alredo sauce, black olives
