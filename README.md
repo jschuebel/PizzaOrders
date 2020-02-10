@@ -2,9 +2,7 @@
 
 Produced with Angular 8 and Lodash
 
-## Results
-
-Top 20
+## Top 20
 Combinations
 pepperoni
 mozzarella cheese
@@ -27,6 +25,7 @@ pepperoni, beef
 Order and Rank
 
 
+## All orders ranked and aggregated
 Rank	Count	Combinations
 13	101	alredo sauce
 571	1	alredo sauce, beef
